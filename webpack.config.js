@@ -4,9 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
-    other: './src/other.js'
+    bundle: './src/index.js'
   },
+  // devtool: 'source-map', // 此种 大而全
+  devtool: 'eval-source-map', // 不生成文件, 集成到打包文件中, 也可报错误的行和列
+  // devtool: 'cheap-module-source-map',
+  // devtool: 'cheap-module-eval-source-map',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist') 
@@ -15,12 +18,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      template: './index.html',
-      filename: 'other.html',
-      chunks: ['other', 'index']
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  }
 }

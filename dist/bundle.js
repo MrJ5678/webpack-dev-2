@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/other.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/other.js":
+/***/ "./src/index.js":
 /*!**********************!*\
-  !*** ./src/other.js ***!
+  !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('other.js');\n\n//# sourceURL=webpack:///./src/other.js?");
+eval("function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nconsole.log('index.js');\n\nvar Log = function Log() {\n  _classCallCheck(this, Log);\n\n  console.lo('error');\n};\n\nvar l = new Log();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIiwiTG9nIiwibG8iLCJsIl0sIm1hcHBpbmdzIjoiOztBQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSxVQUFaOztJQUVNQyxHLEdBQ0osZUFBYztBQUFBOztBQUNaRixTQUFPLENBQUNHLEVBQVIsQ0FBVyxPQUFYO0FBQ0QsQzs7QUFHSCxJQUFJQyxDQUFDLEdBQUcsSUFBSUYsR0FBSixFQUFSIiwiZmlsZSI6Ii4vc3JjL2luZGV4LmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coJ2luZGV4LmpzJyk7XG5cbmNsYXNzIExvZyB7XG4gIGNvbnN0cnVjdG9yKCkge1xuICAgIGNvbnNvbGUubG8oJ2Vycm9yJyk7XG4gIH1cbn1cblxubGV0IGwgPSBuZXcgTG9nKCkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ })
 
