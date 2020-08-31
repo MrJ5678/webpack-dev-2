@@ -7,9 +7,15 @@ module.exports = {
     bundle: './src/index.js'
   },
   // devtool: 'source-map', // 此种 大而全
-  devtool: 'eval-source-map', // 不生成文件, 集成到打包文件中, 也可报错误的行和列
+  // devtool: 'eval-source-map', // 不生成文件, 集成到打包文件中, 也可报错误的行和列
   // devtool: 'cheap-module-source-map',
   // devtool: 'cheap-module-eval-source-map',
+  watch: true,
+  watchOptions: {
+    poll: 1000,
+    aggregateTimeout: 500, //防抖
+    ignored: /node_modules/ 
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist') 

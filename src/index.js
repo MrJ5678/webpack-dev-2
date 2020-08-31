@@ -1,8 +1,8 @@
-console.log('index.js');
+console.log('index.js3');
 
 class Log {
   constructor() {
-    console.lo('error');
+    console.log('error');
   }
 }
 
